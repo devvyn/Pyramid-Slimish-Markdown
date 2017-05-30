@@ -3,7 +3,7 @@ from pyramid.config import Configurator
 from app.view import respond_hello_world
 
 
-def get_app_config():
+def get_configuration():
     """ Instantiate a Configurator object and apply this app's configuration to it. """
     config = Configurator()
     config.add_route('hello', '/')
@@ -11,9 +11,9 @@ def get_app_config():
     return config
 
 
-def get_wsgi_application(config=None):
+def get_application(config=None):
     """ Apply the given config or default config to a new application object. """
     if config is None:
-        config = get_app_config()
+        config = get_configuration()
     wsgi_app = config.make_wsgi_app()
     return wsgi_app
