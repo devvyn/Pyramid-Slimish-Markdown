@@ -1,2 +1,2 @@
-# git+git://github.com/thoughtnirvana/slimish-jinja2.git
 pyramid
+pyramid_mako
