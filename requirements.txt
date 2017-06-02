@@ -1,2 +1,2 @@
 pyramid
-pyramid_mako
+pyramid_jinja2

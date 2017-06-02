@@ -25,4 +25,4 @@ def get_configuration():
 
 
 def apply_renderers(config):
-    config.include('pyramid_mako')
+    config.include('pyramid_jinja2')
