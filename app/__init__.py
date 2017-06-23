@@ -1,7 +1,7 @@
-""" Application entrypoint """
+# coding=utf-8
+"""Application entrypoint and bootstrap. Loads configuration, imports add-on
+ modules and creates a WSGI application object."""
 from .core import get_configuration
-
-__all__ = ['get_application']
 
 
 def get_application(config=None):
