@@ -12,6 +12,10 @@ from wsgiref.simple_server import make_server
 
 from app import get_application, get_configuration
 
+DEBUG_SETTINGS = {'pyramid.reload_all': True,
+                  'pyramid.debug_all': True,
+                  'pyramid.prevent_http_cache': True}
+
 DEBUG_MODULES = ['pyramid_debugtoolbar']
 
 PREVIEW_HTTP_HOST_DEFAULT = '0.0.0.0'
@@ -21,13 +25,13 @@ PREVIEW_HTTP_PORT_DEFAULT = '6543'
 def get_debug_preview_config():
     """ Get the default app configuration and update it for debugging and development 
     before starting a simple HTTP server. """
-    config = get_configuration()
-    for possible_module in DEBUG_MODULES:
-        try_include(config, possible_module)
+    config = get_configuration(settings=DEBUG_SETTINGS)
+    for module_name in DEBUG_MODULES:
+        try_pyramid_config_include(config, module_name)
     return config
 
 
-def try_include(config, module_name):
+def try_pyramid_config_include(config, module_name):
     """
     If possible, include a Python module as a Pyramid extension. Errors are logged instead of halting.
     
