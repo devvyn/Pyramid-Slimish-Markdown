@@ -26,3 +26,5 @@ def get_configuration():
 
 def apply_renderers(config):
     config.include('pyramid_jinja2')
+    config.add_settings({'jinja2.extensions': ['slimish_jinja.SlimishExtension']})
+    config.add_jinja2_renderer('.slim')
