@@ -16,9 +16,9 @@ Add routes and views to the Configurator instance.
     # @todo convert to declarative configuration using decorators in plug-able modules
 
 
-def get_configuration():
+def get_configuration(settings=None):
     """ Instantiate a Configurator object and apply this app's configuration to it. """
-    config = Configurator()
+    config = Configurator(settings=settings)
     apply_renderers(config)
     apply_routes(config)
     return config
