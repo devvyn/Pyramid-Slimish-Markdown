@@ -2,6 +2,12 @@
 
 ## [v0.1.1]
 
+### Changed
+
+- minor fix in `CHANGELOG.md` so GitLab.com displays link correctly
+
+## [v0.1.0]
+
 ### Added
 
 Initial project starter, a hello world web page.
@@ -13,5 +19,6 @@ Initial project starter, a hello world web page.
 - `requirements.txt` - dependencies for pip to install
 - `wsgi.py` - contains entry point for uwsgi
 
-[Unreleased]: https://gitlab.com/devvyn/slimgen-CLI/compare/v0.1.0...master
+[Unreleased]: https://gitlab.com/devvyn/slimgen-CLI/compare/v0.1.1...master
+[v0.1.1]: https://gitlab.com/devvyn/slimgen-CLI/compare/v0.1.0...v0.1.1
 [v0.1.0]: https://gitlab.com/devvyn/slimgen-CLI/tree/v0.1.0
