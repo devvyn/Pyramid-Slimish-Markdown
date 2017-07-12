@@ -19,6 +19,6 @@ Initial project starter, a hello world web page.
 - `requirements.txt` - dependencies for pip to install
 - `wsgi.py` - contains entry point for uwsgi
 
-[Unreleased]: https://gitlab.com/devvyn/slimgen-CLI/compare/v0.1.1...master
-[v0.1.1]: https://gitlab.com/devvyn/slimgen-CLI/compare/v0.1.0...v0.1.1
-[v0.1.0]: https://gitlab.com/devvyn/slimgen-CLI/tree/v0.1.0
+[Unreleased]: https://github.com/devvyn/Pyramid-Slimish-Markdown/compare/v0.1.1...master
+[v0.1.1]: https://github.com/devvyn/Pyramid-Slimish-Markdown/compare/v0.1.0...v0.1.1
+[v0.1.0]: https://github.com/devvyn/Pyramid-Slimish-Markdown/tree/v0.1.0
