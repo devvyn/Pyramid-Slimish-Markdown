@@ -132,7 +132,7 @@ However, there's no significant benefit to this approach and environment
 variables work just as well in most cases—and are more conducive to 12-factor
 app development—so such a file hasn't been included in the code base.
 
-[12-factor application]: https://gitlab.com/devvyn/slimgen-CLI/tree/master
+[12-factor application]: https://12factor.net/
 [Docker logging drivers]: https://docs.docker.com/engine/admin/logging/overview/
 [Docker]: https://docs.docker.com/engine/installation/
 [Slim]: https://github.com/thoughtnirvana/slimish-jinja2
