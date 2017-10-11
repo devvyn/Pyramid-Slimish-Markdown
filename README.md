@@ -30,7 +30,7 @@ own choosing:
 docker build -t my_image_name .
 ```
 
-Now it's read to run.
+Now it's ready to run.
 
 **WARNING**: It's easy to forget that this building of the image takes
 a snapshot of the source code at the time when the build command is run,
